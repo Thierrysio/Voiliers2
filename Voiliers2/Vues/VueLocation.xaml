@@ -19,5 +19,30 @@
            Text="personnes"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
+   
+        <Label Text="Liste des voiliers"
+               FontSize="22"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <CollectionView x:Name="VoiliersCollection"
+                        ItemsSource="{Binding mesVoiliers}"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="LightGray"
+                           CornerRadius="8"
+                           Margin="5"
+                           Padding="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Capacite, StringFormat='Capacité : {0} personnes'}"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </VerticalStackLayout>
+
+
+
 </ContentPage>
