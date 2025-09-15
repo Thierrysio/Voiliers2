@@ -36,7 +36,12 @@ public partial class VueLocation : ContentPage
         Voilier selectedVoilier = 
 			e.CurrentSelection.FirstOrDefault() as Voilier;
 
-		
+		this.changerPage();
 
+    }
+
+	private async void changerPage()
+	{
+        await Navigation.PushAsync(new VueDetailVoilier());
     }
 }

@@ -63,6 +63,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Vues\VueDetailVoilier.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Vues\VueLocation.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -8,7 +8,8 @@ namespace Voiliers2
         {
             InitializeComponent();
 
-            MainPage = new VueLocation();
+            MainPage = new NavigationPage(new VueLocation());
+            
         }
     }
 }
