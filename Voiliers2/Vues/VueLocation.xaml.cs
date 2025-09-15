@@ -30,4 +30,13 @@ public partial class VueLocation : ContentPage
 		}
 
 	}
+
+    private void VoiliersCollection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        Voilier selectedVoilier = 
+			e.CurrentSelection.FirstOrDefault() as Voilier;
+
+		
+
+    }
 }

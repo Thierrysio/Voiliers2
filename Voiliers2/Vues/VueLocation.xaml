@@ -27,7 +27,8 @@
 
         <CollectionView x:Name="VoiliersCollection"
                         ItemsSource="{Binding mesVoiliers}"
-                        SelectionMode="None">
+                        SelectionMode="Single"
+                        SelectionChanged="VoiliersCollection_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame BorderColor="LightGray"
